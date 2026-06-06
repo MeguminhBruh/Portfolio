@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Việt Dũng | Portfolio Kỹ Năng Số</title>
+  <meta name="description" content="Trang web portfolio cá nhân của Nguyễn Việt Dũng - Sinh viên ngành Hệ thống thông tin, lưu trữ các dự án và bài tập đã hoàn thành.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <div class="app-container">
+    
+    <!-- Background Glowing Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header>
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon">VD</div>
+          <div class="logo-text">Việt Dũng<span>.dev</span></div>
+        </a>
+        
+        <div class="nav-actions">
+          <nav class="nav-links">
+            <span class="nav-link active" data-target="view-about">Giới thiệu</span>
+            <span class="nav-link" data-target="view-projects">Dự án</span>
+            <span class="nav-link" data-target="view-conclusion">Tổng kết</span>
+          </nav>
+          
+          <!-- Theme Toggle -->
+          <button id="themeToggle" class="theme-toggle" aria-label="Thay đổi giao diện sáng/tối">
+            <!-- Sun Icon (Active in Dark Mode) -->
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zM11 1h2v3h-2zm0 19h2v3h-2zM3.5 4.9l2.1-2.1 1.4 1.4-2.1 2.1zm13.4 13.4l2.1-2.1 1.4 1.4-2.1 2.1zM1 11h3v2H1zm19 0h3v2h-3zM3.5 19.1l2.1 2.1 1.4-1.4-2.1-2.1zm13.4-13.4l2.1 2.1 1.4-1.4-2.1-2.1z"/>
+            </svg>
+            <!-- Moon Icon (Active in Light Mode) -->
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Toggle Button -->
+          <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Mở menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-content">
+
+      <!-- ================= VIEW 1: TRANG GIỚI THIỆU ================= -->
+      <section id="view-about" class="view-section active">
+        <div class="hero-wrapper">
+          
+          <!-- Portrait Card -->
+          <div class="portrait-card-container">
+            <div class="portrait-glow-ring"></div>
+            <div class="portrait-card">
+              <div class="portrait-img-box">
+                <img src="assets/avatar.jpg" alt="Chân dung Nguyễn Việt Dũng" class="portrait-img">
+              </div>
+              <div class="portrait-info">
+                <h2 class="portrait-name">Nguyễn Việt Dũng</h2>
+                <span class="portrait-badge">Ngành Hệ thống thông tin</span>
+                <div class="portrait-meta">
+                  <div class="meta-item">
+                    <span class="meta-icon">👤</span>
+                    <span class="meta-label">Mã sinh viên</span>
+                    <span class="meta-val">25023195</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">👥</span>
+                    <span class="meta-label">Lớp</span>
+                    <span class="meta-val">IS1</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">📅</span>
+                    <span class="meta-label">Ngày sinh</span>
+                    <span class="meta-val">08/02/2007</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <span class="meta-label">Trường học</span>
+                    <span class="meta-val">Đại học Công nghệ</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">📍</span>
+                    <span class="meta-label">Địa chỉ</span>
+                    <span class="meta-val">Hà Nội, Việt Nam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Content -->
+          <div class="bio-wrapper">
+            <div>
+              <span class="section-tag">Giới thiệu bản thân</span>
+              <h1 class="bio-title">Xin chào, mình là <br><span>Nguyễn Việt Dũng</span></h1>
+            </div>
+            
+            <p class="bio-desc">
+              Hiện đang là sinh viên lớp <strong>IS1</strong> chuyên ngành <strong>Hệ thống thông tin</strong>. Mình đam mê khám phá các giải pháp công nghệ, phân tích và xử lý dữ liệu nghiệp vụ, cũng như thiết kế xây dựng các hệ thống thông tin tối ưu và thân thiện với người dùng.
+            </p>
+
+            <div class="bio-blocks">
+              <!-- Block 1 -->
+              <div class="bio-block-card">
+                <div class="bio-block-header">
+                  <div class="bio-block-icon">🎯</div>
+                  <h3 class="bio-block-title">Mục tiêu học tập & Định hướng cá nhân</h3>
+                </div>
+                <div class="bio-block-text">
+                  <ul>
+                    <li><strong>Học tập:</strong> Nỗ lực làm chủ các kiến thức cốt lõi về phân tích thiết kế hệ thống, cơ sở dữ liệu, quản trị mạng, lập trình ứng dụng, và phân tích dữ liệu kinh tế (Business Analytics).</li>
+                    <li><strong>Định hướng:</strong> Hướng tới trở thành một kỹ sư Hệ thống thông tin hoặc chuyên viên phân tích nghiệp vụ (Business Analyst) có khả năng kết nối hiệu quả giữa giải pháp công nghệ và nhu cầu kinh doanh của doanh nghiệp.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Block 2 -->
+              <div class="bio-block-card">
+                <div class="bio-block-header">
+                  <div class="bio-block-icon">📚</div>
+                  <h3 class="bio-block-title">Mục tiêu của Portfolio</h3>
+                </div>
+                <div class="bio-block-text">
+                  <ul>
+                    <li>Hệ thống hóa toàn bộ các bài tập thực hành lớn về kỹ năng số (Digital Skills) đã được giảng dạy và thực hành trong học kỳ qua.</li>
+                    <li>Lưu trữ bài bản các sản phẩm cá nhân giúp dễ dàng truy cập, chia sẻ sản phẩm với giảng viên và xây dựng hồ sơ năng lực học tập uy tín.</li>
+                    <li>Rèn luyện kỹ năng phát triển sản phẩm web thực tế và tư duy bố cục thông tin trực quan.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW 2: TRANG DỰ ÁN ================= -->
+      <section id="view-projects" class="view-section">
+        <div class="view-header">
+          <span class="section-tag">Sản phẩm thực hành</span>
+          <h2 class="view-title">Các Dự Án Đã Hoàn Thành</h2>
+          <p class="view-subtitle">Tổng hợp đầy đủ các bài tập thực hành kỹ năng số và ứng dụng phần cứng/phần mềm trong học kỳ qua.</p>
+        </div>
+
+        <!-- Rendered Dynamically via JS -->
+        <div id="projectsGrid" class="projects-grid"></div>
+      </section>
+
+      <!-- ================= VIEW 3: TRANG TỔNG KẾT ================= -->
+      <section id="view-conclusion" class="view-section">
+        <div class="view-header">
+          <span class="section-tag">Tổng kết môn học</span>
+          <h2 class="view-title">Hành Trình Đã Qua</h2>
+          <p class="view-subtitle">Những đúc kết cá nhân, kỹ năng thực tế đạt được và thách thức đã vượt qua khi xây dựng Portfolio này.</p>
+        </div>
+
+        <div class="conclusion-grid">
+          <!-- Reflection Box -->
+          <div class="reflection-card">
+            <h3 class="bio-block-title" style="font-size: 1.5rem;">Cảm nhận cá nhân</h3>
+            <div class="reflection-quote">
+              "Việc xây dựng trang Web Portfolio này không chỉ đơn thuần là hoàn thành một yêu cầu học phần, mà đó là cơ hội tuyệt vời để mình tự phản chiếu lại toàn bộ những gì đã tiếp thu trong suốt kỳ học."
+            </div>
+            <div class="reflection-body">
+              <p>
+                Quá trình thu thập lại các bài tập lớn từ bài phần cứng máy tính, khai phá dữ liệu, đến các ứng dụng AI và an toàn thông tin đã giúp mình củng cố một lượng kiến thức số đa chiều. Điều này cực kỳ bổ ích cho chuyên ngành <strong>Hệ thống thông tin</strong> mà mình đang theo đuổi.
+              </p>
+              <p>
+                <strong>Điểm mình tâm đắc nhất:</strong> Mình đã tự tay thiết kế và lập trình hoàn thiện giao diện portfolio này với phong cách <strong>Glassmorphism</strong> hiện đại, có khả năng phản hồi linh hoạt trên mọi kích thước màn hình và tích hợp chế độ chuyển đổi sáng/tối mượt mà.
+              </p>
+              <p>
+                <strong>Thách thức lớn nhất:</strong> Đó chính là việc chuẩn hóa dữ liệu báo cáo và thiết lập cấu trúc liên kết đám mây (Google Drive) sao cho người xem dễ tiếp cận nhất. Đồng thời việc căn chỉnh CSS thuần (Vanilla CSS) để tạo cảm giác chuyển trang mượt mà không cần dùng đến các thư viện cồng kềnh cũng đòi hỏi sự tỉ mỉ rất cao.
+              </p>
+            </div>
+          </div>
+
+          <!-- Skills Sidebar -->
+          <div class="skills-sidebar">
+            <div class="conclusion-metric-card">
+              <div class="metric-header">
+                <div class="metric-icon">🛠️</div>
+                <h3 class="metric-title">Kỹ năng phát triển</h3>
+              </div>
+              <div class="metric-list">
+                <!-- Skill 1 -->
+                <div class="metric-list-item">
+                  <span class="metric-item-name">Lập trình Front-end (HTML/CSS/JS)</span>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 85%;"></div>
+                  </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="metric-list-item">
+                  <span class="metric-item-name">Quản trị & Khai phá dữ liệu</span>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 90%;"></div>
+                  </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="metric-list-item">
+                  <span class="metric-item-name">Ứng dụng AI & Công nghệ số</span>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="metric-list-item">
+                  <span class="metric-item-name">Hợp tác số & An toàn bảo mật</span>
+                  <div class="metric-bar-bg">
+                    <div class="metric-bar-fill" style="width: 90%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="conclusion-metric-card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+              <div class="metric-header">
+                <div class="metric-icon" style="color: var(--primary-color);">🚀</div>
+                <h3 class="metric-title">Bài học tâm đắc</h3>
+              </div>
+              <div class="bio-block-text" style="color: var(--text-primary); font-size: 0.9rem;">
+                <ul style="display: flex; flex-direction: column; gap: 10px;">
+                  <li><strong>Tư duy hệ thống:</strong> Biết sắp xếp tài nguyên số một cách logic khoa học.</li>
+                  <li><strong>Liêm chính học thuật:</strong> Nâng cao tính tự giác và tôn trọng bản quyền trí tuệ.</li>
+                  <li><strong>Tự học liên tục:</strong> Khả năng tra cứu, sửa lỗi và cập nhật công nghệ mới linh hoạt.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-credits">
+          Thiết kế & Lập trình bởi <strong>Nguyễn Việt Dũng</strong> © 2026
+        </div>
+        <div class="footer-info">
+          MSV: 25023195 | Lớp: IS1 | Hệ thống thông tin
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
